@@ -23,14 +23,16 @@ html, body {
     pointer-events: all;
     color: #c4c4c4;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    user-select: none;
   }
   .container h2{
     font-size: 44px;
     pointer-events: all;
     color: #252525;
+    user-select: none;
   }
   .container h3{
-    font-size: 30px;
+    font-size: 44px;
     color: #252525;
     pointer-events: all;
   }
