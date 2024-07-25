@@ -28,15 +28,30 @@ html, body {
     transition: color 0.3s, text-shadow 0.3s;
 }
 
+footer {
+  z-index: 1;
+  width: 100%;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  color: #727272;
+  text-align:center;
+}
+
+footer a{
+  color: #494949;
+  text-decoration: none;
+}
+
 .container h2 {
     font-size: 44px;
     pointer-events: all;
-    color: #252525;
+    color: #494949;
     user-select: none;
 }
 
 .container h3 {
-    font-size: 44px;
+    font-size: 55px;
     color: #252525;
     pointer-events: all;
 }
@@ -61,7 +76,9 @@ html, body {
 }
 
 .container a{
-  color: #252525;
+  color: #727272;
+  padding: 10px 20px;
+  margin: 5px;
 }
 
 .container span {
@@ -88,11 +105,14 @@ html, body {
     }
 
     .container h1 {
-        font-size: 12vw; /* Adjust font size for smaller screens */
+        font-size: 12vw;
     }
 
-    .container h2, .container h3 {
-        font-size: 6vw; /* Adjust font size for smaller screens */
+    .container h2 {
+        font-size: 6vw;
+    }
+    .container h3{
+      font-size: 8vw;
     }
 
     .buttons {
