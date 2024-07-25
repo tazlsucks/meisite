@@ -36,7 +36,7 @@ html, body {
 }
 
 .container h3 {
-    font-size: 30px;
+    font-size: 44px;
     color: #252525;
     pointer-events: all;
 }
@@ -48,6 +48,7 @@ html, body {
     justify-content: center;
     gap: 10px;
     overflow-x: auto;
+    width: 100%;
 }
 
 #particles-js {
@@ -60,7 +61,7 @@ html, body {
 }
 
 .container a{
-  
+  color: #252525;
 }
 
 .container span {
