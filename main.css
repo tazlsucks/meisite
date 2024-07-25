@@ -9,59 +9,92 @@ html, body {
     overflow: hidden;
     background-color: #000;
     font-family: 'Saira', Courier, monospace;
-    cursor:pointer;
-  }
+    cursor: pointer;
+}
 
-  .container{
-    z-index: 1; 
+.container {
+    z-index: 1;
     text-align: center;
     pointer-events: none;
-  }
+    padding: 20px;
+}
 
-  .container h1{
+.container h1 {
     font-size: 100px;
     pointer-events: all;
     color: #c4c4c4;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 10px rgba(83, 83, 83, 0.7);
     user-select: none;
-  }
-  .container h2{
-    font-size: 44px;
-    pointer-events: all;
-    color: #252525;
-    user-select: none;
-  }
-  .container h3{
-    font-size: 44px;
-    color: #252525;
-    pointer-events: all;
-  }
+    transition: color 0.3s, text-shadow 0.3s;
+}
 
-  .buttons {
+.container h2 {
+    font-size: 44px;
+    pointer-events: all;
+    color: #252525;
+    user-select: none;
+}
+
+.container h3 {
+    font-size: 30px;
+    color: #252525;
+    pointer-events: all;
+}
+
+.buttons {
     z-index: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     overflow-x: auto;
-  }
+}
 
-  #particles-js {
+#particles-js {
     width: 100%;
     height: 100vh;
     background-color: #000;
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
-      .container span {
-        position: relative;
-        display: inline-block;
-        transition: color 0.3s, text-shadow 0.3s;
-      }
+}
 
-    .container span:hover {
+.container a{
+  
+}
+
+.container span {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.container span:hover {
     color: #252525;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.container h1:hover{
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    html, body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
     }
+
+    .container h1 {
+        font-size: 12vw; /* Adjust font size for smaller screens */
+    }
+
+    .container h2, .container h3 {
+        font-size: 6vw; /* Adjust font size for smaller screens */
+    }
+
+    .buttons {
+        gap: 5px;
+    }
+}
