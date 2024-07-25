@@ -118,6 +118,9 @@ footer a:hover{
     .container h3{
       font-size: 8vw;
     }
+    #particles-js{
+        pointer-events: none;
+    }
 
     .buttons {
         gap: 5px;
