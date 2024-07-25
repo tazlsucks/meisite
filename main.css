@@ -1,22 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
 html, body {
-    margin: 0;
-    padding: 0;
     height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     background-color: #000;
     font-family: 'Saira', Courier, monospace;
-    color: white;
+    cursor:pointer;
+  }
+
+  .container{
+    z-index: 1; 
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .container h1{
+    font-size: 100px;
+    pointer-events: all;
+    color: #c4c4c4;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+  .container h2{
+    font-size: 44px;
+    pointer-events: all;
+    color: #252525;
+  }
+  .container h3{
+    font-size: 30px;
+    color: #252525;
+    pointer-events: all;
+  }
+
+  .buttons {
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: auto;
   }
 
   #particles-js {
     width: 100%;
     height: 100vh;
-    background-color: #000; /* Set a background color or image */
+    background-color: #000;
     position: absolute;
     top: 0;
     left: 0;
   }
   
-  
+      .container span {
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s, text-shadow 0.3s;
+      }
+
+    .container span:hover {
+    color: #252525;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
